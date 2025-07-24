@@ -172,7 +172,7 @@ tar xzvf openshift-install-linux-4.12.0.tar.gz
 ```
 Create the ignition file and copy it to http directory:
 ```shell
-./openshift-install --dir=~/sno-work create create single-node-ignition-config
+./openshift-install --dir=~/sno-work create single-node-ignition-config
 cp ~/sno-work/single-node-ignition-config.ign /var/www/html/ignition/sno.ign
 restorecon -vR /var/www/html || true
 ```
